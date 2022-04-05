@@ -1,0 +1,276 @@
+// Author: Sofia Gratny
+// Task: building a program that makes art out of ages.
+// Date: Feburary 20, 2022
+
+#include <stdio.h> 
+
+
+//get ones digit
+int ones(int a, int b)
+{
+b = a % 10;
+return b;
+}
+//get tens digit
+int tens(int a, int b)
+{
+b = (a/10) %10;
+return b;
+}
+//get hundreds digit
+int hundreds(int a, int b)
+{
+b = (a/100) % 10;
+return b;
+}
+
+//print #0-9
+void print0(int line) {
+	if (line == 0) {
+	printf (" 00 ");
+	}
+	else if (line == 1) {
+	printf ("0  0");
+	}
+	else if (line == 2) {
+	printf ("0  0");
+	}
+	else if (line == 3) {
+	printf ("0  0");
+	}
+	else {
+	printf (" 00 ");
+	}
+}
+
+void print1(int line) {
+	if (line == 0) {
+	printf (" 11");
+	}
+	else if (line == 1) {
+	printf ("1 1 ");
+	}
+	else if (line == 2) {
+	printf ("  1");
+	}
+	else if (line == 3) {
+	printf ("  1");
+	}
+	else {
+	printf ("  1");
+	}
+}
+
+void print2(int line) {
+	if (line == 0) {
+	printf (" 22");
+	}
+	else if (line == 1) {
+	printf ("2  2");
+	}
+	else if (line == 2) {
+	printf ("  2");
+	}
+	else if (line == 3) {
+	printf (" 2");
+	}
+	else {
+	printf ("2222");
+	}
+}
+
+void print3(int line) {
+	if (line == 0) {
+	printf ("3333");
+	}
+	else if (line == 1) {
+	printf ("   3");
+	}
+	else if (line == 2) {
+	printf ("333");
+	}
+	else if (line == 3) {
+	printf ("   3");
+	}
+	else {
+	printf ("3333");
+	}
+}
+
+void print4(int line) {
+	if (line == 0) {
+	printf ("4   4");
+	}
+	else if (line == 1) {
+	printf ("4   4");
+	}
+	else if (line == 2) {
+	printf ("44444");
+	}
+	else if (line == 3) {
+	printf ("    4");
+	}
+	else {
+	printf ("    4");
+	}
+}
+
+void print5(int line) {
+	if (line == 0) {
+	printf ("5555");
+	}
+	else if (line == 1) {
+	printf ("5   ");
+	}
+	else if (line == 2) {
+	printf ("5555");
+	}
+	else if (line == 3) {
+	printf ("   5");
+	}
+	else {
+	printf ("5555");
+	}
+}
+
+void print6(int line) {
+	if (line == 0) {
+	printf ("6666");
+	}
+	else if (line == 1) {
+	printf ("6   ");
+	}
+	else if (line == 2) {
+	printf ("6666");
+	}
+	else if (line == 3) {
+	printf ("6  6");
+	}
+	else {
+	printf ("6666");
+	}
+}
+
+void print7(int line) {
+	if (line == 0) {
+	printf ("7777");
+	}
+	else if (line == 1) {
+	printf ("   7");
+	}
+	else if (line == 2) {
+	printf ("  7");
+	}
+	else if (line == 3) {
+	printf (" 7 ");
+	}
+	else {
+	printf ("7  ");
+	}
+}
+void print8(int line) {
+	if (line == 0) {
+	printf ("8888");
+	}
+	else if (line == 1) {
+	printf ("8  8");
+	}
+	else if (line == 2) {
+	printf ("8888");
+	}
+	else if (line == 3) {
+	printf ("8  8");
+	}
+	else {
+	printf ("8888");
+	}
+}
+
+void print9(int line) {
+	if (line == 0) {
+	printf ("9999");
+	}
+	else if (line == 1) {
+	printf ("9  9");
+	}
+	else if (line == 2) {
+	printf ("9999");
+	}
+	else if (line == 3) {
+	printf ("   9");
+	}
+	else {
+	printf ("   9");
+	}
+}
+
+
+//print digit
+void printdigit(int digit, int line) {
+	switch(digit) {
+	case 0:
+	print0(line);
+	break;
+	case 1:
+	print0(line);
+	break;
+	case 2:
+	print0(line);
+	break;
+	case 3:
+	print0(line);
+	break;
+	case 4:
+	print0(line);
+	break;
+}
+//print age
+void printage(int hundreds, int tens, int ones)
+{
+int line;
+printage(hundreds,tens,ones); {
+line=0;
+printdigit(hundreds, line);
+printdigit(tens, line);
+printdigit(ones, line);
+printf("\n");
+line=1;
+printdigit(hundreds, line);
+printdigit(tens, line);
+printdigit(ones, line);
+printf("\n");
+line=2;
+printdigit(hundreds, line);
+printdigit(tens, line);
+printdigit(ones, line);
+printf("\n");
+line=3;
+printdigit(hundreds, line);
+printdigit(tens, line);
+printdigit(ones, line);
+printf("\n");
+line=4;
+printdigit(hundreds, line);
+printdigit(tens, line);
+printdigit(ones, line);
+printf("\n");
+
+
+
+
+// function
+int main() {
+
+	// variables
+	int age, hundreds, tens, ones;
+	
+	// Prompt & input
+	printf("Please enter your age: ");
+	scanf("%d", &age);
+
+	hundreds = hundreds(age, hundreds);
+	tens = tens(age, tens);
+	ones = (age, ones);
+
+	printage(hundreds, tens, ones);
+}
